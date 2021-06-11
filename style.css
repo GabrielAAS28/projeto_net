@@ -1,0 +1,262 @@
+body{
+    font-family: 'lato',sans-serif;
+    margin: 0;
+}
+           
+        .header-topo{
+                display: flex;
+                background-color: #E0E0E0;
+                color: #333;
+                height: 80px;
+               justify-content:space-around;
+               align-items:  center;
+               width: 100%;
+               
+            }
+
+       
+        .header-topo span{
+                width: 100%;
+                font-size: 20px;
+                
+             
+            }
+
+        
+        
+
+          
+        .hamburguer-icon div{
+                width: 35px;
+                height: 5px;
+                background-color: #333;
+                margin: 6px 0;
+            }
+
+        .naveg-menu ul{
+            display: none;
+            list-style-type:none;
+            background-color: #333;
+            color: white;
+            position: flex;
+            height: 100%;
+            width: 85.4%;
+            right: 0px;
+            top:0px;
+            z-index: 1;
+            margin: 0px;
+            padding: 5px 0px;
+            font-size: 16px;
+            
+            }
+
+        .naveg-menu ul li{
+            text-align: left;
+            margin: 1px 0px;
+            padding: 0px 5px;
+            align-items: center;
+            clear: both;
+            }
+
+        .naveg-menu ul li:nth-child(1){
+            text-align: left;
+            }
+
+        .naveg-menu ul li:hover{
+            background-color: #c4c4c4;
+            color: #333;
+             }
+
+       .naveg-menu ul li :hover:nth-child(1) {
+            background-color: #333;
+            color: white;
+                }
+
+        .naveg-menu ul hover {
+            display: block;
+                }
+       
+
+        .encima{
+                padding: 12px 5px ;
+                font-size: 14px;
+                     }
+    
+    
+        .adir{
+            width: 370px;
+            height: 32px;
+        
+            padding:  0px 24px 0px 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: 1px solid #979797;
+                
+                    
+            } 
+    
+        .linhas {
+
+          border-bottom: 1px solid #333;
+           
+                }
+           
+        .linhastopo{
+           
+                   border-top: 1px solid #333;
+           
+                   } 
+
+
+        
+
+    #imgg{
+            position: flex;
+            width: 40px;
+            height: 36.84px;
+            left: 0px;
+            top: 22px;
+
+            border: 2px solid #333333;
+                } 
+       
+    #oseq{
+        position:flex;
+        height: 32px;
+        width: 372px;
+        right: 13%;
+        top: 20%;
+        background: #FFFFFF;
+        border: 1px solid #979797;
+        box-sizing: border-box;
+        border-radius: 10px;
+                 }
+            
+       
+    #enviar{
+                position: flex;
+                width: 100%;
+                height: 32px;;
+                color: whitesmoke;
+                padding: 0px 0px 0px 0px;
+                background-color:#333333;
+                margin-top: 50px;
+             
+             
+                     }
+     #seperarr{
+             border: 25 solid #333;
+             width: 100%;
+             
+             display: flex;
+           
+             align-content: center;
+             justify-content: space-around;
+             font-size: 18px;
+            
+         
+                 }   
+
+    #bordarr{
+                    position: flex;
+                    width: 550px;
+                    height: 440px;
+                    left: calc(50% - 550px/2);
+                    top: calc(50% - 440px/2);
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    border: 1px solid #333;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    padding: 15px 25px;
+             }
+
+            
+    #subirr table{
+            width: 550px;
+            height: 440px;    
+            margin-bottom: 5px;
+            padding: 15px 10px;
+            position: relative;
+        }
+
+
+        footer{
+           
+            position: absolute;
+            display: block;
+            width: 1500px;
+            height: 8px;
+            left: 0px;
+            top: 992px;
+            background: #333333;
+        }
+
+
+/*------------------------------------------------------------------------*/
+@media screen and (min-width:414px){
+    
+
+        .header-topo{
+        display: flex;
+        background-color: #E0E0E0;
+        color: #333;
+        height: 80px;
+        justify-content:space-around;
+        align-items:  center;
+        width: 100%;
+        
+        }
+
+
+    .header-topo span{
+            width: 100%;
+            font-size: 20px;
+            
+     
+    }
+
+
+
+        .naveg-menu ul{
+            display: flex;
+            flex-direction: row;
+             position: relative;   
+             width: 350px;
+             height: 40px;
+             background-color: white;
+             color: #333;    
+            clear: both;
+
+           }    
+
+           .naveg-menu ul li {
+               border-right: 1px solid #333;
+           }
+
+           .naveg-menu ul li :nth-child(2){
+              border: 0;
+           }
+
+           .naveg-menu ul li:nth-child(1){
+          display: none;
+            }
+
+         .hamburguer-icon{
+             display: none;
+         }   
+                                            }
+
+        .centro{
+             text-align: center;
+    
+                                            }
+
+    #subirr table{
+        width:100%;
+        height: 440px;    
+        padding: 15px 10px;
+        display: flex;
+        float: right;
+     }
+                                    

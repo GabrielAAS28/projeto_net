@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>  
+        <meta charset="UTF-8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Teste Front-end</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+            <header>
+                <div class="content">
+                <div class="header-topo">
+                    <img id="imgg" nome="imgg" src="./imagnes/image.png"> 
+                    <div><span>Controle financeiro</span></div>
+                        <div class="naveg-menu">
+                        <div class="hamburguer-icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            </div>  
+                            
+                                <ul>
+                                    <li>X</li>
+                                    <li>Cadastro de transações</li>
+                                    <li>Limpar dados</li>   
+                                    <li>Salvar no servidor</li>
+                                </ul>
+
+                        </div>  
+                    </div>
+                </div>
+            </header>
+
+            <div id="seperarr" name="seperarr"> 
+                
+                    <form id="bordarr" name="bordarr">
+
+                        <div class="centro"><h3><strong>Nova transação</strong></h3></div>
+                            
+                        <div>
+                            <div class="encima">Tipo de transação</div>
+
+                            <div> 
+
+                                <select name="oseq" id="oseq" >
+                                    <option value="cmp">Compra</option>
+                                    <option value="vnd">Venda</option>
+                                </select>
+
+                            </div>
+            
+                        </div>
+
+                        <div>
+                            <div class="encima">Nome da Mercadoria</div>
+                            <div><input class="adir" type="text" placeholder="input"></div>
+                            
+                        </div>  
+                        <div>
+                            <div class="encima">Valor</div>
+                            <div><input  class="adir" type="text" placeholder="R$ 0,00"></div>
+                        
+                        </div>
+
+
+                        <div>
+                            
+                            <div><button type="submit"id="enviar" nome="enviar">Adicionar transação</button></div>
+                        
+                        </div>
+
+
+                    </form>
+                 
+
+                        <table id="subirr" nome="subirr" >
+                            <th><strong><h3>Extrato de transações</h3></strong></th></tr>
+                            <td class="linhas" >Mercadoria</td>                       <td class="linhas">Valor</td></tr>
+
+                            <td class="linhas">+ Lorem ipsum dolor sit amet consectetur</td>           <td  class="linhas"> R$ 12.999,99</td></tr>
+
+                            <td class="linhas"> - Quis nostrud exercitation</td>                         <td  class="linhas">R$ 99.99</td></tr>
+
+                            <td class="linhas"> + Lorem ipsum</td>                                       <td  class="linhas">R$ 9,99</td></tr>
+
+                            <td class="linhastopo"><strong>Total</strong></td>                           <td  class="linhastopo"><strong>R$ 12.909,99</strong></td>
+                        </table>
+                   
+            </div> 
+            
+    </body>
+    <footer></footer>
+
+</html>
