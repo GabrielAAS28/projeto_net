@@ -1,17 +1,19 @@
 body{
-    margin: 0;
     font-family: 'lato',sans-serif;
-    
+    margin: 0;
 }
+
+@media screen  and (max-width:415px) {
+    
 .header-topo{
     display: flex;
     background-color: #E0E0E0;
     color: #333;
+    width: 100%;  
     height: 80px;
     justify-content:space-around;
     align-items:  center;
-    width: 100%;
-   
+    
 }
 
 .header-topo span{
@@ -26,8 +28,6 @@ body{
     height: 27.63px;
     left: 22px;
     top: 15px;
-
-
     border: 2px solid #333333;
         } 
 
@@ -39,7 +39,7 @@ body{
 }
 
 #separarr{
-    display: none;
+    display: block;
 }
 
 .responsive-menu ul{
@@ -55,9 +55,7 @@ body{
     top:0px;
     margin: 0px;
     padding: 20px 0px;
-
-
-    }
+ }
 
 .responsive-menu ul li{
     text-align: right;
@@ -83,15 +81,16 @@ body{
     display: block;
 }
 .centro{
-    display: none;
+    display: flex;
 }
 
 #bordarr{
     position: flex;
     width: 100%;
     float: bottom;
-   
-    
+    display: flex;
+    margin: 0px;
+     
 }
 
 
@@ -140,15 +139,10 @@ body{
 }
 
 .linha-meio div{
-    /* Line */
-
-position: absolute;
-width: 371px;
-height: 0px;
-left: 0px;
-top: 290px;
-
-border: 1px solid #979797;
+     
+    margin: 5px 0px;
+    width: 100%;
+    border: 1px solid #979797;
 
 }
 
@@ -192,7 +186,7 @@ margin: 0%;
     height: 440px;    
     margin-bottom: 5px;
     padding: 15px 10px;
-    position: relative;
+    position: none;
     display: none;
     }
 
@@ -206,75 +200,477 @@ footer{
     left: 0px;
     top: 992px;
     background: #333333;
+    } 
+
+}
+
+
+@media screen and (max-width:1024px){
+
+    .header-topo{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        top: 24px;
+        left: 0px;
+        justify-content:space-around;
+        align-items:  center;
+        background-color: #E0E0E0;
+        color: #333;
+      
     }
-
-/*------------------------------------------------------------------------*/
-
-@media screen and (min-width:414px){
-}
-.header-topo{
-    display: flex;
-    background-color: #E0E0E0;
-    color: #333;
-    height: 80px;
-    justify-content:space-around;
-    align-items:  center;
-    width: 100%;
-   
-}
-
-.header-topo span{
-    width: 100%;
-    font-size: 20px;
- 
-}
-
-.hamburguer-icon  div{
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-}
-
-.responsive-menu ul{
-    display: none;
-    list-style-type:none;
-    background-color: #333;
-    font-size: 18px;
-    color: white;
-    position: fixed;
-    height: 100%;
-    width: 85.4%;
-    right: 0px;
-    top:0px;
-    margin: 0px;
-    padding: 20px 0px;
-
-
+    
+    .header-topo span{
+        width: 411px;
+        height: 43px;
+        font-size: 20px;
+     
     }
-
-.responsive-menu ul li{
-    text-align: right;
-    margin:7px 0px;
-    padding: 0PX 20px;
-}
-
-
-.responsive-menu ul  li:nth-child(1) {
-    text-align: left;
+    
+    #imgg{
+        position: flex;
+        width: 30px;
+        height: 27.63px;
+        left: 22px;
+        top: 15px;
+        border: 2px solid #333333;
+            } 
+    
+    .hamburguer-icon  div{
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
     }
-
-.responsive-menu ul  li:hover:nth-child(1) {
-    background-color:#333;
-    color: white;
-        }    
-
-.responsive-menu ul li:hover {
-    background-color: #c4c4c4;
-    color: #333;
+    
+    .responsive-menu ul{
+        display: none;
+        list-style-type:none;
+        background-color: #333;
+        font-size: 18px;
+        color: white;
+        position: fixed;
+        height: 100%;
+        width: 252px;
+        right: 0px;
+        top:0px;
+        margin: 0px;
+        padding: 20px 0px;
+    
         }
-.responsive-menu:hover ul{
-    display: block;
+    
+    .responsive-menu ul li{
+        text-align: right;
+        margin:7px 0px;
+        padding: 0PX 20px;
+    }
+    
+    
+    .responsive-menu ul  li:nth-child(1) {
+        text-align: left;
+    }
+    
+    .responsive-menu ul  li:hover:nth-child(1) {
+        background-color:#333;
+        color: white;
+            }    
+    
+    .responsive-menu ul li:hover {
+        background-color: #c4c4c4;
+        color: #333;
+            }
+    .responsive-menu:hover ul{
+        display: block;
+    }
+    .centro h3{
+
+        display: flex;
+        position: flex;
+        width: 100%;
+        height: 20px;
+        font-size: 18px;
+        text-align: center;  
+        float: right;      
+        }
+    
+    #bordarr{
+        padding: 5px;
+        display: flex;
+        position: flex;
+        width: 768px;
+        height: 189px;
+        margin: 20px 0px;
+        border: 1px solid #979797;
+        box-sizing: border-box;
+        border-radius: 4px;
+        background: #FFFFFF;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
+        
+    }
+    .alinhar{
+        display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    
+    .encima{
+        display: flex;
+        position: flex;
+        width: 150px;
+        font-size: 14px;
+        line-height: 22px;
+        font-style: normal;
+        font-weight: normal;
+        margin: 0 auto;
+        float: left;
+    }
+    
+    #oseq{
+        display: flex;
+        position:flex;
+        width: 150px;
+        height: 32px;
+        top: 25px;
+        background: #FFFFFF;
+        border: 1px solid #979797;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: 0 auto;
+        float: left;
+    }
+
+    #seperarr{
+        flex-wrap: wrap;
+        border: 25 solid #333;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        font-size: 18px;
+    }
+    
+    .adir{
+        flex-direction: row;
+        display: flex;
+        float: right;
+        position: flex;
+        width: 150px;
+        height: 32px;
+        padding:  0px 24px 0px 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 1px solid #979797;
+        margin: 0px;  
+        float: left;     
+        } 
+       
+    #enviar{
+        display: flex;
+        position: flex;
+        width: 371px;
+        height: 32px;
+        float: right;
+        border-radius: 4px;
+        background: #333333;
+        color: white;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+                
+    }
+    
+    .linha-meio div{
+        /* Line */
+        margin: 5px 0px;
+        width: 100%;
+        border: 1px solid #979797;
+        display: none;
+    
+    }
+    
+    
+    .afastar{
+    display: absolute;    
+    float: right;    
+    position: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0%;
+    
+      }
+    
+    .linhas {
+    
+        border-bottom: 1px solid #333;
+         
+        }
+    
+    .linhastopo{
+                 margin-bottom: 5px;
+                 border-top: 1px solid #333;
+         
+    } 
+    
+    .lucro{
+        position: flex;
+        width: 100%;
+        height: 18px;
+        left: 263px;
+        top: 169px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        text-align: right;
+        margin: 0px;
+     
+        }
+    
+        #subirr table{
+            width: 100%;
+            height: 281px;    
+            position: flex;
+            display: flex;
+            flex-wrap: wrap;
+            float: left;
+            }
+        
+    
+    
+    footer{      
+        position: absolute;
+        width: 100%;
+        height: 8px;
+        left: 0px;
+        top: 1016px;
+        background: #333333;
+        }
+
 }
 
+ @media screen and (min-width:1025px){
+            .header-topo{
+                display: flex;
+                background-color: #E0E0E0;
+                color: #333;
+                height: 80px;
+                justify-content:space-around;
+                align-items:  center;
+                width: 100%;
+                
+            }
+            
+            
+            .header-topo span{
+                width: 100%;
+                font-size: 20px;
+            }
+            
+            
+            .hamburguer-icon div{
+                width: 35px;
+                height: 5px;
+                background-color: #333;
+                margin: 6px 0;
+                display: none;
+            }
+            
+            .responsive-menu ul{
+            display: flex;
+            list-style-type:none;
+            background-color: #FFFFFF;
+            color: #333;
+            position: flex;
+            height: 100%;
+            width: 85.4%;
+            right: 0px;
+            top:0px;
+            z-index: 1;
+            margin: 0px;
+            padding: 5px 0px;
+            font-size: 16px;
+            
+            }
+            
+            .responsive-menu ul li{
+            text-align: left;
+            margin: 1px 0px;
+            padding: 0px 5px;
+            align-items: center;
+            clear: both;
+            border-left: 1px solid #333;
+            }
+            
+            .responsive-menu ul li:nth-child(1){
+            text-align: left;
+            display: none;
+            
+            }
+            .responsive-menu ul li:nth-child(2){
+                border: 0;}
+            
+            .responsive-menu ul li:hover{
+            background-color: #979797;
+            color: #333;
+            }
+            
+            .responsive-menu ul li :hover:nth-child(1) {
+            background-color: #FFFFFF;
+            color: #333;
+                }
+            
+            .responsive-menu ul hover {
+            display: block;
+                }
+            
+            
+            .encima{
+                padding: 12px 5px ;
+                font-size: 14px;
+                    }
+            
+            
+            
+            .adir{
+            width: 370px;
+            height: 32px;
+            
+            padding:  0px 24px 0px 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: 1px solid #979797;
+                
+                    
+            } 
+            
+            .linhas {
+            
+            border-bottom: 1px solid #333;
+            
+                }
+            
+            .linhastopo{
+            
+                border-top: 1px solid #333;
+            
+                } 
+            
+            
+            .centro{
+                text-align: center;
+                align-content: center;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .afastar{
+                text-align: center;
+                align-content: space-between;
+                display: flex;
+                flex-direction: column;
+                position: flex;
+            
+            }
+            
+            .afastar label{
+                text-align: center;;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                margin-bottom: 35px;
+                }
+            
+            
+            .lucro{
+                display:flex;
+                font-size: 10px;
+                float: right;
+            
+            }
+            
+            #imgg{
+            position: flex;
+            width: 40px;
+            height: 36.84px;
+            left: 0px;
+            top: 22px;
+            
+            border: 2px solid #333333;
+                } 
+            
+            #oseq{
+            position:flex;
+            height: 32px;
+            width: 372px;
+            right: 13%;
+            top: 20%;
+            background: #FFFFFF;
+            border: 1px solid #979797;
+            box-sizing: border-box;
+            border-radius: 10px;
+                }
+            
+            
+            #enviar{
+                position: flex;
+                width: 100%;
+                height: 32px;;
+                color: whitesmoke;
+                padding: 0px 0px 0px 0px;
+                background-color:#333333;
+                margin-top: 50px;
+            
+            
+                    }
+            #seperarr{
+                width: 100%;
+                display: flex;
+                position: flex;
+                justify-content: space-evenly;
+                font-size: 18px;
+                align-items: center;
+            
+            
+                }   
+            
+            #bordarr{
+                    position: flex;
+                    width: 550px;
+                    height: 440px;
+                    left: calc(50% - 550px/2);
+                    top: calc(50% - 440px/2);
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    border: 1px solid #333;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    padding: 15px 25px;
+            }
+            
+            
+            #subirr table{
+            width: 680px;
+            height: 281px;    
+            margin-bottom: 450px;
+            padding: 15px 10px;
+            position: relative;
+            left: 420px;
+            }
+            
+            
+            footer{
+            position: absolute;
+            display: block;
+            width: 1500px;
+            height: 8px;
+            left: 0px;
+            top: 992px;
+            background: #333333;
+            }
+}
 
